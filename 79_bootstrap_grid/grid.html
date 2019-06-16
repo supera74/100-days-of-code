@@ -11,6 +11,11 @@
         background: pink;
         border: 1px solid purple;
     }
+
+    .orange {
+        background: orange;
+        border: 1px dashed red;
+    }
 </style>
 
 </head>
@@ -25,27 +30,48 @@
     <!-- 3. Write nested grids -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>
-            <div class="col-lg-1 pink">COL LG 1</div>  
-        </div>
+        <!-- <div class="row">
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>  
+        </div> -->
 
     <div class="row">
-    <div class="col-lg-4 pink">COL LG 4</div>
-    <div class="col-lg-4 pink">COL LG 4</div>
-    <div class="col-lg-4 pink">COL LG 4</div>
+        <!-- here we have the first one that I split to 2 -->
+        <div class="col-md-3 col-sm-6 pink">
+            <div class="row">
+                <div class="col-lg-6 orange">FIRST</div>
+                <div class="col-lg-6 orange">SECOND</div>
+            </div>
+        </div>
+<!-- second and third is intact -->
+        <div class="col-md-3 col-sm-6 pink">Best Stocks</div>
+        <div class="col-md-3 col-sm-6 pink">Best Stocks</div>
+        <!-- the 4th one I split into 6 pieces and call them smal cap -->
+        <div class="col-md-3 col-sm-6 pink">
+            <div class="row"></div>
+                <div class="col-lg-2 orange">small cap</div>
+                <div class="col-lg-2 orange">small cap</div>
+                <div class="col-lg-2 orange">small cap</div>
+                <div class="col-lg-2 orange">small cap</div>
+                <div class="col-lg-2 orange">small cap</div>
+            </div>
+        </div>
+    
+    </div>
     </div>
 </div>
+</div>
+    
     
 </body>
 </html>
